@@ -36,6 +36,8 @@ const store = redux.legacy_createStore(rootReducer);
 store.subscribe(() => {
     console.log(store.getState());
 })
+
+// action dispatching 
 store.dispatch({
     type: 'INC_NUM',
     value: 2,
